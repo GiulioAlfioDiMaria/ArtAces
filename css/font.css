@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Volkhov";
+    src: url(../font/Volkhov-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Volkhov";
+    src: url(../font/Volkhov-Bold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Allura";
+    src: url(../font/Allura-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}

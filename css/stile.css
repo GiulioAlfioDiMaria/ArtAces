@@ -1,0 +1,480 @@
+@import url(font.css);
+
+body {
+  margin: 0;
+  background-color: rgba(3, 71, 50, 0.1); 
+  font-family: "Volkhov", "Allura";
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  font-family: Allura;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.hero h3 a{
+  background: none;
+  padding: 0;
+  font-size: 18px;
+  cursor: pointer;
+  color: #F15152;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.hero h3 a:hover{
+  color: #FFA500;
+  background: none;
+  text-decoration: underline;
+}
+
+
+.artists h2{
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.artists .testo a {
+  color: #191716;
+  text-decoration: none;
+
+}
+
+.artists .testo:hover a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 12px;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+.card-2:nth-child(odd) {
+  background-color: #F15152;
+}
+
+.card-2:nth-child(even) {
+  background-color: #FCBD26;
+}
+
+.card-2 {
+  display: flex;
+  gap: 20px;
+  background: #f2f2f2;
+  margin-bottom: 100px;
+  height: 200px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.card-2 {
+  display: flex;
+  gap: 20px;
+  background: #f2f2f2;
+  margin-bottom: 100px;
+  height: 200px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.card-2 .immagine:nth-child(odd) {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-2 .immagine:nth-child(even) {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-2 .immagine img {
+  transition: transform 0.3s ease;
+}
+
+.card-2 .immagine:hover img {
+  transform: scale(1.1);
+}
+
+.card-2 .testo {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-2 .testo h2,
+.card-2 .testo p {
+  margin: 0;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+header nav a:hover {
+  color: #FCBD26;
+  text-decoration: underline;
+  text-underline-offset: 38px;
+  text-decoration-thickness: 3px;
+}
+
+header a.attivo {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #191716;
+}
+
+header p a{
+  color: #FCBD26;
+  margin: 0;
+  font-family: Allura;
+  font-size: 30px;
+  text-decoration: none;
+  line-height: 0;
+
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+section.hero {
+  height: 300px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #191716;
+  padding: 100px;
+  box-sizing: border-box;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+}
+
+
+.grid {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+main div.card {
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+main div img {
+  border-radius: 5px;
+}
+
+main div.card h2 {
+  margin: 0;
+  padding: 20px 20px 4px 20px;
+  font-size: 18px;
+}
+
+main div.card p {
+  margin: 0;
+  padding: 0 20px 20px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+main div.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+section.contact {
+  background-color: #FCBD26;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.contact .overlay a {
+  padding: 10px 20px;
+  color: #f2f2f2;
+}
+
+.contact .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #191716;
+}
+
+footer .footer-menu {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 0;
+  display: flex;
+}
+
+footer .footer-menu li {
+  margin: 0px 10px;
+}
+
+footer .footer-menu a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+footer .footer-menu a:hover {
+  color: #FCBD26;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2.5px;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer p {
+  font-family: Allura;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  font-size: 30px;
+  color: #FCBD26;
+}
+
+footer .footer-links span {
+  color: #f2f2f2;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+
+  .card-2 {
+    flex-direction: column;
+  }
+
+  .card-2 .testo,
+  .card-2 .immagine {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  header {
+    flex-direction: column;
+    gap: 10
+  }
+}
+
+.contact-form {
+  display: flex;
+  padding: 20px;
+  text-align: left;
+  font-family: volkhov;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-form h2 {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.contact-form p {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: volkhov;
+  border: none;
+  border-bottom: 1px solid #191716;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #F15152;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: volkhov;
+}
+
+button:hover {
+  background-color: #FCBD26;
+}
+
+.decorative-rectangle {
+  width: 30%;
+  background-color: #FCBD26;
+  margin-left: 250px;
+}
+
+.about {
+  display: flex;
+  align-items: center; 
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.text-about {
+  flex: 1;
+}
+
+.text-about h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.image-about {
+  margin-left: 100px;
+  max-width: 40%;
+}
+
+.gallery {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 60px;
+  width: 900px;
+  justify-content: center;
+}
+
+.discover-artists-button {
+  background: none;
+  padding: 0;
+  font-size: 18px;
+  cursor: pointer;
+  color: #F15152;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.discover-artists-button:hover {
+  color: #FFA500;
+  background: none;
+  text-decoration: underline;
+}
+
+.gallery-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery-home .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gallery-home .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-illustrators {
+  padding: 0;
+  font-size: 18px;
+  cursor: pointer;
+  color: #F15152;
+  margin: 40px auto 80px;
+  text-align: center;
+}
+
+.button-illustrators a {
+  color: inherit;
+}
+
+.button-illustrators a:hover {
+  color: #FFA500;
+  text-decoration: underline;
+}
